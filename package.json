@@ -9,6 +9,7 @@
     "skipLibCheck": true
   },
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "start": "ts-node src/index.ts"
   }
 }
