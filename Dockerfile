@@ -2,6 +2,10 @@
 FROM node:18 AS build
 WORKDIR /app
 COPY . .
+
+# Garante que typescript está disponível globalmente
+RUN npm install -g typescript
+
 RUN npm install
 RUN npm run build
 
